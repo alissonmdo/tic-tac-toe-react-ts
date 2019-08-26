@@ -12,6 +12,8 @@ const App = () => {
 export default App
 
 const MyApp = styled.div`
-  background-color: black;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `

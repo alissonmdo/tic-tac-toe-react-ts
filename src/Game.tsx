@@ -79,14 +79,20 @@ const Game: React.FC<any> = () => {
 export default Game
 
 const MyGame = styled.div`
-  /* background: radial-gradient(
-    1293.83px at 27.36% 25.63%,
-    #00f4c3 0%,
-    #5689ef 100%
-  ); */
-
-  width: 100%;
-  height: 600px;
+  background: radial-gradient(582.6px at 14% 22.71%, #00f4c3 0%, #5689ef 100%);
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 350px;
   display: flex;
-  align-content: stretch;
+  align-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 `

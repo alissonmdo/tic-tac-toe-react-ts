@@ -29,6 +29,9 @@ const MyBoard = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: 100px 100px;
-  overflow: hidden;
-  max-width: 620px;
+  width: 350px;
+
+  padding: 25px 25px;
+  height: 350px;
+  justify-self: center;
 `

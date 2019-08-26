@@ -57,22 +57,21 @@ const MySquare = styled.button`
     }
   }
   & > .styled-background {
-    background: no-repeat center transparent;
-
+    background: transparent no-repeat center;
+    mask: no-repeat center;
+    width: 100%;
+    height: 100%;
     ${(p: SquareStyles) => {
       console.log(p.player)
       switch (p.player) {
         case 'X':
-          return `background: url(${X}) no-repeat center transparent; opacity: 1;`
+          return `background-color: white ; mask: url(${X}) no-repeat center; opacity: 1;`
         case 'O':
-          return `background: url(${O}) no-repeat center transparent; opacity: 1;`
+          return `background-color: white; mask: url(${O}) no-repeat center; opacity: 1;`
         default:
           return 'opacity: 0;'
       }
     }}
     transition: all, ease, 0.5s;
-
-    width: 100%;
-    height: 100%;
   }
 `
