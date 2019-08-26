@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import X from './assets/svg/X.svg'
 import O from './assets/svg/O.svg'
+import { MdClear } from 'react-icons/md'
+import { FaDotCircle } from 'react-icons/fa'
 
 type SquareProps = {
   player?: string
