@@ -12,7 +12,7 @@ type PanelProps = {
 const Panel: React.FC<PanelProps> = props => {
   const displayStatus = (player: string, winner: null | string) => {
     if (winner) return 'VICTORY OF:'
-    return 'TURN OF:'
+    return 'TEST OF:'
   }
   return (
     <MyPanel>
